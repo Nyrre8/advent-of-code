@@ -15,8 +15,7 @@ build/
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
-**/input.txt
-
+**/input*.txt
 ### Kotlin ###
 .kotlin
 

@@ -19,3 +19,11 @@ tasks.test {
 kotlin {
     jvmToolchain(24)
 }
+
+tasks.withType<JavaCompile> {
+    options.compilerArgs.addAll(listOf("--enable-preview", "--source", "24"))
+}
+
+tasks.withType<JavaExec> {
+    jvmArgs("--enable-preview")
+}
